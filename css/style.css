@@ -432,7 +432,7 @@ body main .fading .contMain .rowMain .colMain .up {
   transition: 0.7s;
   border-radius: 20px;
   width: 30%;
-  padding: 2% 0%;
+  padding: 1.5% 0%;
   background: transparent;
   border: 3px solid whitesmoke;
 }
