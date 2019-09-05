@@ -226,6 +226,12 @@ body nav .nav1 ul {
   }
 }
 
+@media (max-width: 1000px) {
+  body nav .nav1 ul {
+    width: 85%;
+  }
+}
+
 
 body nav .nav1 ul li {
   margin: 0% 2%;
@@ -238,6 +244,12 @@ body nav .nav1 ul li a {
   -webkit-transition: .7s;
   -o-transition: .7s;
   transition: .7s;
+}
+
+@media (max-width: 1200px) {
+  body nav .nav1 ul li a{
+    font-size: 1em;
+  }
 }
 
 body nav .nav1 ul li a:after {
@@ -1176,29 +1188,7 @@ body .contSlider {
   padding-top: 10%;
 }
 
-@media (max-width: 1400px){
-  body .contSlider {
-    margin-top: 10%;
-  }
-}
 
-@media (max-width: 768px){
-  body .contSlider {
-    margin-top: 20%;
-  }
-}
-
-@media (max-width: 576px){
-  body .contSlider {
-    margin-top: 35%;
-  }
-}
-
-@media (max-width: 370px){
-  body .contSlider {
-    margin-top: 45%;
-  }
-}
 
 body .contSlider .rowSlider .colSlider .slider .indicators .indicator-item:hover {
   background-color: #00738C !important;
