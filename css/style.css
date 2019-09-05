@@ -1256,6 +1256,25 @@ body .contUs {
   margin-top:5%;
 }
 
+::-webkit-scrollbar{
+  width: 13px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #2de1e7;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: 0 0 3px black;
+}
+
+::selection {
+  color: rgb(235, 235, 235);
+  background: rgb(40, 201, 241);
+}
+
 body .contUs .rowUs .colUs .akord .kard{
   background-color: #0083B0;
   text-decoration: none;
