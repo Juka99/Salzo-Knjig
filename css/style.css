@@ -789,7 +789,6 @@ body .contPoverenje .rowPoverenje p {
   color: whitesmoke;
   font-weight: bold;
   font-size: 1.3em;
-  text-transform: capitalize;
 }
 
 body .contPoverenje .rowPoverenje .colPoverenje .owl .item figure {
