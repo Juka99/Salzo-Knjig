@@ -453,8 +453,8 @@ body main .fading .contMain .rowMain .colMain .up:hover, body main .fading .cont
 
 /* Ovde pocinjem O Nama sekciju */
 body .onamaFluid {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: -o-linear-gradient(top, #00B4DB, #0083B0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: linear-gradient(top, #00B4DB, #0083B0);
   padding: 5% 0%;
 }
@@ -583,8 +583,8 @@ body .usluge .contUsluge .rowUsluge .colUsluge .textUsluge .up:hover, body .uslu
 
 /* Ovde zavrsavam usluge i pocinjem Zasto Bas Mi */
 body .fluidZasto {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: -o-linear-gradient(top, #00B4DB, #0083B0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: linear-gradient(top, #00B4DB, #0083B0);
   padding: 5% 0%;
   /*background: linear-gradient(to bottom, #2193b0, #6dd5ed);*/
@@ -767,8 +767,8 @@ body .contTestimonial .rowTestimonial .colTestimonial .owl .owl-nav {
 /*STA KAZU O NAMA END*/
 /*POVERENJE SU NAM POKLONILI*/
 body .contPoverenje {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: -o-linear-gradient(top, #00B4DB, #0083B0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00B4DB), to(#0083B0));
   background: linear-gradient(top, #00B4DB, #0083B0);
 }
 
@@ -1065,14 +1065,45 @@ body footer {
   padding: 3% 0% 0.2% 0%;
 }
 
-body footer .fluidFooter .contFooter .rowFooter .colFooter {
+body footer .fluidFooter .contFooter .rowFooter{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .fluidFooter .contFooter .rowFooter .colFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   color: whitesmoke;
   font-weight: bold;
+}
+
+@media (max-width: 992px){
+  body footer .fluidFooter .contFooter .rowFooter .colFooter:first-child{
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  body footer .fluidFooter .contFooter .rowFooter .colFooter:last-child{
+    margin: 1% 0% 2% 0%;
+  }
 }
 
 /*body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter {
@@ -1163,10 +1194,19 @@ body footer .fluidFooter .contFooter .rowFooter .colFooter1 .navFooter ul li a {
 
 body footer .fluidFooter .copyRight {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2%;
 }
 
@@ -1267,7 +1307,13 @@ body .contUs {
 }
 
 ::-webkit-scrollbar-track{
-  box-shadow: 0 0 3px black;
+  -webkit-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+}
+
+::-moz-selection {
+  color: rgb(235, 235, 235);
+  background: rgb(40, 201, 241);
 }
 
 ::selection {
