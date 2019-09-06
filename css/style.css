@@ -239,17 +239,12 @@ body nav .nav1 ul {
   width: 55%;
 }
 
-@media (max-width: 1400px) {
-  body nav .nav1 ul {
-    width: 70%;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
   body nav .nav1 ul {
     width: 85%;
   }
 }
+
 
 
 body nav .nav1 ul li {
@@ -1071,18 +1066,16 @@ body footer {
 }
 
 body footer .fluidFooter .contFooter .rowFooter .colFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
-body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter {
+/*body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,8 +1087,8 @@ body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter {
       -ms-flex-align: center;
           align-items: center;
 }
-
-@media (max-width: 992px) {
+*/
+/*@media (max-width: 992px) {
   body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter {
     margin-bottom: 3%;
   }
@@ -1105,7 +1098,7 @@ body footer .fluidFooter .contFooter .rowFooter .colFooter .logoFooter img {
   width: 130px;
   max-width: 100%;
   height: auto;
-}
+}*/
 
 body footer .fluidFooter .contFooter .rowFooter .colFooter1 {
   display: -webkit-box;
@@ -1170,6 +1163,10 @@ body footer .fluidFooter .contFooter .rowFooter .colFooter1 .navFooter ul li a {
 
 body footer .fluidFooter .copyRight {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2%;
 }
 
