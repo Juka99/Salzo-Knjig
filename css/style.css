@@ -310,6 +310,13 @@ body .sidenav {
   padding-top: 5%;
 }
 
+body .sidenav .socialIconSide .fab {
+  color: whitesmoke;
+  text-align: center;
+  margin: inherit;
+  font-size: 30px;
+}
+
 body .sidenav .sideLogo {
   width: 100%;
   display: -webkit-box;
