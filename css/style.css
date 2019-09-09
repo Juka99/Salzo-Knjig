@@ -170,6 +170,13 @@ body nav .nav1 .telefon a {
 body nav .nav1 .telefon a:after {
   content: none;
 }
+body nav .nav1 .socialIcon a:hover {
+  color: #00B4DB;
+}
+
+body nav .nav1 .socialIcon a:after {
+  content: none;
+}
 
 body nav .nav1 .mainLogo {
   height: 100%;
